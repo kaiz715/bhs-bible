@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.tabs {
+  position: relative;   
+  min-height: 380px;
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+</style>
+
+<body>
+
+<div class = "w3-display-container w3-deep-purple" style = "height:300px">
+<div class="w3-display-middle w3-jumbo"> <b>BHS</b>Review </div>
+</div>
+
+
+
+<div class= "w3-row">
+
+
+	<div class="w3-half w3-container w3-white w3-padding-32" style="height:500px">
+	<form class="w3-container w3-right w3-margin-right">
+
+
+<div class="tabs" style = "width:400px">
+
+
+
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1">
+       <label for="tab-1">Sign Up</label>
+       
+       <div class="content">
+       <div class = "w3-margin-left">
+	<h6 class = "w3-left">Email</h6>
+	<input class="w3-input w3-round" style="width:320px" type="text">
+	<h6 class = "w3-left">Password</h6>
+	<input class="w3-input w3-round" style="width:320px" type="password">    
+	<h6 class = "w3-left">Confirm Password</h6>
+	<input class="w3-input w3-round" style="width:320px" type="password">  
+    <br>
+    <input class="w3-btn w3-deep-purple" type="button" value="Sign Up">
+
+       </div> 
+   </div>
+
+
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1" checked>
+       <label for="tab-3">Login</label>
+     
+       <div class="content">
+                  <div class = "w3-margin-left">
+     <div class = "w3-padding-16">
+	<h6 class = "w3-left">Email</h6>
+	<br> <br>
+	<input class="w3-input w3-round" style="width:320px" type="text">
+</div>
+	<div class = "w3-padding-16">
+	<h6 class = "w3-left">Password</h6>
+	<br> <br>
+	<input class="w3-input w3-round" style="width:320px" type="password">
+	</div>
+    <div class = "w3-margin-top">
+    <input class="w3-btn w3-deep-purple" type="button" value="Login">
+    </div>
+       </div> 
+   </div>   
+   </div>
+</div>
+</div>
+
+
+	</form>
+	</div>
+    
+
+	<div class = "w3-half w3-container w3-light-grey w3-padding-64" style="height:500px">
+	<div class = "w3-margin-left">
+	<p>Hi User! <br> <br> For security reasons, you cannot access any of our site before logging in. <br> <br> If you haven't made an account yet, please make one with your <i> school email </i>. <br> <br> Please agree to these rules before using our site. </p>
+	</div>
+	</div>
+</div>
+
+
+
+<footer class="w3-container w3-black w3-center w3-opacity w3-padding-32">  
+  <div class="w3-padding-16">
+    <p> <b>BHS</b>Review <br> Need Help? Contact: </p>
+ </div>
+</footer>
+
+</body>
